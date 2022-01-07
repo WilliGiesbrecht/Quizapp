@@ -31,13 +31,15 @@
                 <img src="./img/maze.png" class="card-img-top">
             </div>
             <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
+                <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;">25%</div>
             </div>
             <div class="card-body align-center" id="endscreen" style="display: none;">
                 <div class="quiz-end">Quiz beendet!</div>
                 <div>Du hast <b id="amount-of-right-questions">X</b> von <b id="amount-of-questions">X</b> richtig
                     beantwortet.</div>
+                <div class="button-row">
+                    <button onclick="restardGame()" class="btn btn-warning">Neue Runde</button>
+                </div>
             </div>
 
             <div class="card-body" id="questionBody">
@@ -71,10 +73,9 @@
                     <span>
                         <b id="questionpage">1</b> von <b id="questionsNumbers"></b> Fragen
                     </span>
-                    <button onclick="nextQuestion()" class="btn btn-dark" disabled id="next-button">Nächste
+                    <button onclick="nextQuestion()" class="btn btn-warning" disabled id="next-button">Nächste
                         Frage</button>
                 </div>
-
             </div>
         </div>
     </div>

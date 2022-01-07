@@ -41,5 +41,11 @@ body {
 }
 
 .progress-bar {
-    background-color: goldenrod !important;
+    background-color: #ffc107 !important;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
 }
